@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UZw-ij-m2i">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--pun-->
+        <scene sceneID="l5K-Jd-ooe">
+            <objects>
+                <viewController storyboardIdentifier="punsVC" id="Na1-Zq-sdw" customClass="PunsViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hOD-bX-bRT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaW-fH-2Er">
+                                <rect key="frame" x="336" y="616" width="48" height="41"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="25"/>
+                                <state key="normal" title="next">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="0.85308754279999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newJoke:" destination="Na1-Zq-sdw" eventType="touchUpInside" id="s4S-MY-WF0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-Tv-LQ2">
+                                <rect key="frame" x="30" y="355.33333333333331" width="354" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VaW-fH-2Er" secondAttribute="trailing" constant="30" id="Afr-sK-L4A"/>
+                            <constraint firstItem="Gps-Tv-LQ2" firstAttribute="leading" secondItem="uc6-0a-XJr" secondAttribute="leading" constant="30" id="FGs-ej-eS7"/>
+                            <constraint firstItem="Gps-Tv-LQ2" firstAttribute="centerY" secondItem="hOD-bX-bRT" secondAttribute="centerY" id="Fqh-Ec-MpC"/>
+                            <constraint firstItem="uc6-0a-XJr" firstAttribute="bottom" secondItem="VaW-fH-2Er" secondAttribute="bottom" constant="30" id="hB7-k4-j42"/>
+                            <constraint firstItem="uc6-0a-XJr" firstAttribute="trailing" secondItem="Gps-Tv-LQ2" secondAttribute="trailing" constant="30" id="nDf-j3-1oL"/>
+                            <constraint firstItem="Gps-Tv-LQ2" firstAttribute="centerX" secondItem="hOD-bX-bRT" secondAttribute="centerX" id="sEW-Av-ntZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uc6-0a-XJr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pun" id="2Qi-i5-Jur">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="output" destination="Gps-Tv-LQ2" id="psk-Pz-lbn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzg-22-XEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="-58.695652173913047"/>
+        </scene>
+        <!--dad-->
+        <scene sceneID="9nv-3a-6Vn">
+            <objects>
+                <viewController storyboardIdentifier="dadJokesVC" id="ogH-vA-HpS" customClass="DadJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wKi-lX-iWG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zev-5O-DXz">
+                                <rect key="frame" x="336" y="616" width="48" height="41"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="25"/>
+                                <state key="normal" title="next">
+                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="0.84610445209999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newJoke:" destination="Na1-Zq-sdw" eventType="touchUpInside" id="CTm-Xn-T4B"/>
+                                    <action selector="newJoke:" destination="ogH-vA-HpS" eventType="touchUpInside" id="ynT-eC-6G1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNA-LB-AXw">
+                                <rect key="frame" x="30" y="355.33333333333331" width="354" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SNF-sn-lx8" firstAttribute="trailing" secondItem="zev-5O-DXz" secondAttribute="trailing" constant="30" id="02t-Rt-MFy"/>
+                            <constraint firstItem="jNA-LB-AXw" firstAttribute="leading" secondItem="SNF-sn-lx8" secondAttribute="leading" constant="30" id="DbR-Zb-QNv"/>
+                            <constraint firstItem="SNF-sn-lx8" firstAttribute="trailing" secondItem="jNA-LB-AXw" secondAttribute="trailing" constant="30" id="EQR-DE-iXw"/>
+                            <constraint firstItem="SNF-sn-lx8" firstAttribute="bottom" secondItem="zev-5O-DXz" secondAttribute="bottom" constant="30" id="Sf1-h8-tZu"/>
+                            <constraint firstItem="jNA-LB-AXw" firstAttribute="centerY" secondItem="wKi-lX-iWG" secondAttribute="centerY" id="hZ3-xn-FVr"/>
+                            <constraint firstItem="jNA-LB-AXw" firstAttribute="centerX" secondItem="wKi-lX-iWG" secondAttribute="centerX" id="xIt-v5-hhb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SNF-sn-lx8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="dad" id="a1w-R6-toW">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="output" destination="jNA-LB-AXw" id="719-yI-QV5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JdW-Mb-U1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="-1416.0326086956522"/>
+        </scene>
+        <!--science-->
+        <scene sceneID="1Qv-UO-mjU">
+            <objects>
+                <viewController storyboardIdentifier="goodJokesVC" id="NPC-2S-HUo" customClass="GoodJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ane-GS-CTw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXn-ek-Pyq">
+                                <rect key="frame" x="336" y="616" width="48" height="41"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="25"/>
+                                <state key="normal" title="next">
+                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newJoke:" destination="Na1-Zq-sdw" eventType="touchUpInside" id="997-cH-t8i"/>
+                                    <action selector="newJoke:" destination="NPC-2S-HUo" eventType="touchUpInside" id="yrJ-so-xvV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qc-Gp-6Xp">
+                                <rect key="frame" x="30" y="355.33333333333331" width="354" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IE8-0T-Mkw" firstAttribute="bottom" secondItem="FXn-ek-Pyq" secondAttribute="bottom" constant="30" id="HZv-O4-aus"/>
+                            <constraint firstItem="IE8-0T-Mkw" firstAttribute="trailing" secondItem="8qc-Gp-6Xp" secondAttribute="trailing" constant="30" id="MBJ-0a-gRG"/>
+                            <constraint firstItem="8qc-Gp-6Xp" firstAttribute="centerY" secondItem="ane-GS-CTw" secondAttribute="centerY" id="VQU-NF-Lhj"/>
+                            <constraint firstItem="8qc-Gp-6Xp" firstAttribute="centerX" secondItem="ane-GS-CTw" secondAttribute="centerX" id="Zip-jN-Rff"/>
+                            <constraint firstItem="IE8-0T-Mkw" firstAttribute="trailing" secondItem="FXn-ek-Pyq" secondAttribute="trailing" constant="30" id="dkT-Q7-H8d"/>
+                            <constraint firstItem="8qc-Gp-6Xp" firstAttribute="leading" secondItem="IE8-0T-Mkw" secondAttribute="leading" constant="30" id="xW8-8F-hyg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IE8-0T-Mkw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="science" id="iPe-qc-7cT">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="output" destination="8qc-Gp-6Xp" id="HTE-m6-O2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHy-Ve-FnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="-723.91304347826087"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3DY-lw-z9e">
+            <objects>
+                <tabBarController id="UZw-ij-m2i" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cD1-6l-teB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NPC-2S-HUo" kind="relationship" relationship="viewControllers" id="zac-aK-0nH"/>
+                        <segue destination="Na1-Zq-sdw" kind="relationship" relationship="viewControllers" id="xWI-dZ-Pr5"/>
+                        <segue destination="ogH-vA-HpS" kind="relationship" relationship="viewControllers" id="IDO-HC-ucf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cI-i0-9WB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="-390"/>
+        </scene>
+    </scenes>
+</document>
