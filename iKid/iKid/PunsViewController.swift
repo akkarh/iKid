@@ -13,26 +13,35 @@ class PunsViewController: UIViewController {
     @IBOutlet weak var output: UILabel!
     
     var list = [String]()
+    var randomNumber = -1
+    var flipped : Bool = false
     
     func makeJokesList() {
-        list.append("If you spend your day in a well, can you say your day was well spent?")
-        list.append("What do you call an alligator in a vest? \n \nAn Investigator")
-        list.append("Why did the banana go to the doctor? \n \nIt wasn't peeling well")
-        list.append("I am a social vegan. \n \nI avoid meet.")
+        list.append("If you spend your day in a well...\n..can you say your day was well spent?")
+        list.append("What do you call an alligator in a vest?\nAn Investigator")
+        list.append("Why did the banana go to the doctor?\nIt wasn't peeling well")
+        list.append("I am a social vegan...\nI avoid meet.")
     }
     
     func displayJoke() {
-        let randomNumber : Int = Int(arc4random() % 4);
-        output.text = list[randomNumber]
+        let joke = list[randomNumber].split(separator: "\n")
+        if (flipped) {
+            output.text = String(joke[1])
+        } else {
+            output.text = String(joke[0])
+        }
     }
     
     @IBAction func newJoke(_ sender: Any) {
+        flipped = false
+        randomNumber = Int(arc4random() % UInt32(list.count));
         displayJoke()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         makeJokesList()
+        randomNumber = Int(arc4random() % UInt32(list.count));
         displayJoke()
         // Do any additional setup after loading the view.
     }
@@ -42,6 +51,15 @@ class PunsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func flip(_ sender: UIButton) {
+        UIView.transition(with: self.view, duration: 0.325, options: UIViewAnimationOptions.transitionFlipFromRight, animations: {}, completion: { (finished: Bool) -> () in })
+        if !flipped {
+            flipped = true
+        } else {
+            flipped = false
+        }
+        displayJoke()
+    }
 
     /*
     // MARK: - Navigation

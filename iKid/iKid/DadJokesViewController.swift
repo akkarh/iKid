@@ -11,32 +11,51 @@ import UIKit
 class DadJokesViewController: UIViewController {
     
     var list = [String]()
+    var randomNumber = -1
+    var flipped : Bool = false
     
     @IBOutlet weak var output: UILabel!
     
     func makeJokesList() {
-        list.append("I would tell a joke about a pizza, but it's a little cheesy ;)")
-        list.append("What does batman like in his drink? \n \nJust ice.")
-        list.append("Guess what time the man went to the dentist? \n\nTooth-hurt-y")
-        list.append("What do you call a sad cup of coffee? \n\nDepresso.")
+        list.append("I would tell a joke about a pizza\nbut it's a little cheesy ;)")
+        list.append("What does batman like in his drink?\nJust ice.")
+        list.append("Guess what time the man went to the dentist?\nTooth-hurt-y")
+        list.append("What do you call a sad cup of coffee?\nDepresso.")
     }
 
     @IBAction func newJoke(_ sender: UIButton) {
+        flipped = false
+        randomNumber = Int(arc4random() % UInt32(list.count));
         displayJoke()
     }
     
     func displayJoke() {
-        let randomNumber : Int = Int(arc4random() % 4);
-        output.text = list[randomNumber]
+        let joke = list[randomNumber].split(separator: "\n")
+        if (flipped) {
+            output.text = String(joke[1])
+        } else {
+            output.text = String(joke[0])
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         makeJokesList()
+        randomNumber = Int(arc4random() % UInt32(list.count));
         displayJoke()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func flip(_ sender: UIButton) {
+        UIView.transition(with: self.view, duration: 0.325, options: UIViewAnimationOptions.transitionFlipFromRight, animations: {}, completion: { (finished: Bool) -> () in })
+        if !flipped {
+            flipped = true
+        } else {
+            flipped = false
+        }
+        displayJoke()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

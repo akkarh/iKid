@@ -11,6 +11,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
             <string>Helvetica-Light</string>
         </array>
     </customFonts>
@@ -39,9 +40,22 @@
                                 <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPc-Zf-Md9">
+                                <rect key="frame" x="30" y="30" width="354" height="47"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="flip">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="Na1-Zq-sdw" eventType="touchUpInside" id="xfg-GA-c5F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mPc-Zf-Md9" firstAttribute="top" secondItem="uc6-0a-XJr" secondAttribute="top" constant="10" id="3PK-xB-AIR"/>
+                            <constraint firstItem="mPc-Zf-Md9" firstAttribute="leading" secondItem="uc6-0a-XJr" secondAttribute="leading" constant="30" id="7Pf-L8-Kjh"/>
+                            <constraint firstItem="uc6-0a-XJr" firstAttribute="trailing" secondItem="mPc-Zf-Md9" secondAttribute="trailing" constant="30" id="AKg-bv-4DK"/>
                             <constraint firstAttribute="trailing" secondItem="VaW-fH-2Er" secondAttribute="trailing" constant="30" id="Afr-sK-L4A"/>
                             <constraint firstItem="Gps-Tv-LQ2" firstAttribute="leading" secondItem="uc6-0a-XJr" secondAttribute="leading" constant="30" id="FGs-ej-eS7"/>
                             <constraint firstItem="Gps-Tv-LQ2" firstAttribute="centerY" secondItem="hOD-bX-bRT" secondAttribute="centerY" id="Fqh-Ec-MpC"/>
@@ -87,13 +101,26 @@
                                 <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60l-bp-8rG">
+                                <rect key="frame" x="30" y="30" width="354" height="47"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="flip">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="ogH-vA-HpS" eventType="touchUpInside" id="xbP-Wc-w8C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SNF-sn-lx8" firstAttribute="trailing" secondItem="zev-5O-DXz" secondAttribute="trailing" constant="30" id="02t-Rt-MFy"/>
+                            <constraint firstItem="60l-bp-8rG" firstAttribute="leading" secondItem="SNF-sn-lx8" secondAttribute="leading" constant="30" id="2ZQ-SM-FJG"/>
                             <constraint firstItem="jNA-LB-AXw" firstAttribute="leading" secondItem="SNF-sn-lx8" secondAttribute="leading" constant="30" id="DbR-Zb-QNv"/>
                             <constraint firstItem="SNF-sn-lx8" firstAttribute="trailing" secondItem="jNA-LB-AXw" secondAttribute="trailing" constant="30" id="EQR-DE-iXw"/>
                             <constraint firstItem="SNF-sn-lx8" firstAttribute="bottom" secondItem="zev-5O-DXz" secondAttribute="bottom" constant="30" id="Sf1-h8-tZu"/>
+                            <constraint firstItem="SNF-sn-lx8" firstAttribute="trailing" secondItem="60l-bp-8rG" secondAttribute="trailing" constant="30" id="VCb-Aa-o4q"/>
+                            <constraint firstItem="60l-bp-8rG" firstAttribute="top" secondItem="SNF-sn-lx8" secondAttribute="top" constant="10" id="ZxL-Pe-2oW"/>
                             <constraint firstItem="jNA-LB-AXw" firstAttribute="centerY" secondItem="wKi-lX-iWG" secondAttribute="centerY" id="hZ3-xn-FVr"/>
                             <constraint firstItem="jNA-LB-AXw" firstAttribute="centerX" secondItem="wKi-lX-iWG" secondAttribute="centerX" id="xIt-v5-hhb"/>
                         </constraints>
@@ -135,14 +162,27 @@
                                 <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94R-iW-B5H">
+                                <rect key="frame" x="30" y="30" width="354" height="47"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="flip">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="NPC-2S-HUo" eventType="touchUpInside" id="y8u-PY-VTc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IE8-0T-Mkw" firstAttribute="bottom" secondItem="FXn-ek-Pyq" secondAttribute="bottom" constant="30" id="HZv-O4-aus"/>
                             <constraint firstItem="IE8-0T-Mkw" firstAttribute="trailing" secondItem="8qc-Gp-6Xp" secondAttribute="trailing" constant="30" id="MBJ-0a-gRG"/>
+                            <constraint firstItem="IE8-0T-Mkw" firstAttribute="trailing" secondItem="94R-iW-B5H" secondAttribute="trailing" constant="30" id="MPY-ni-KeY"/>
                             <constraint firstItem="8qc-Gp-6Xp" firstAttribute="centerY" secondItem="ane-GS-CTw" secondAttribute="centerY" id="VQU-NF-Lhj"/>
                             <constraint firstItem="8qc-Gp-6Xp" firstAttribute="centerX" secondItem="ane-GS-CTw" secondAttribute="centerX" id="Zip-jN-Rff"/>
                             <constraint firstItem="IE8-0T-Mkw" firstAttribute="trailing" secondItem="FXn-ek-Pyq" secondAttribute="trailing" constant="30" id="dkT-Q7-H8d"/>
+                            <constraint firstItem="94R-iW-B5H" firstAttribute="leading" secondItem="IE8-0T-Mkw" secondAttribute="leading" constant="30" id="jtk-R6-HAD"/>
+                            <constraint firstItem="94R-iW-B5H" firstAttribute="top" secondItem="IE8-0T-Mkw" secondAttribute="top" constant="10" id="kfJ-O7-1R0"/>
                             <constraint firstItem="8qc-Gp-6Xp" firstAttribute="leading" secondItem="IE8-0T-Mkw" secondAttribute="leading" constant="30" id="xW8-8F-hyg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IE8-0T-Mkw"/>
