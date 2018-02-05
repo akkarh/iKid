@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--pun-->
+        <!--puns-->
         <scene sceneID="l5K-Jd-ooe">
             <objects>
                 <viewController storyboardIdentifier="punsVC" id="Na1-Zq-sdw" customClass="PunsViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,7 +65,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uc6-0a-XJr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="pun" id="2Qi-i5-Jur">
+                    <tabBarItem key="tabBarItem" title="puns" id="2Qi-i5-Jur">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
                     </tabBarItem>
                     <connections>
@@ -76,7 +76,55 @@
             </objects>
             <point key="canvasLocation" x="971.01449275362324" y="-58.695652173913047"/>
         </scene>
-        <!--dad-->
+        <!--knock knock joke-->
+        <scene sceneID="OVY-9R-YgN">
+            <objects>
+                <viewController id="7Aj-9h-N0U" customClass="KnockKnockViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gso-8p-ELd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bf-xY-JfH">
+                                <rect key="frame" x="30" y="30" width="354" height="47"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="flip">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipPressed:" destination="7Aj-9h-N0U" eventType="touchUpInside" id="1s9-ff-4gw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb1-Tp-28u">
+                                <rect key="frame" x="30" y="356" width="354" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hb1-Tp-28u" firstAttribute="centerY" secondItem="gso-8p-ELd" secondAttribute="centerY" id="9EV-Va-3kK"/>
+                            <constraint firstItem="6bf-xY-JfH" firstAttribute="top" secondItem="8o4-Cv-28m" secondAttribute="top" constant="10" id="9tK-jk-fuN"/>
+                            <constraint firstItem="8o4-Cv-28m" firstAttribute="trailing" secondItem="6bf-xY-JfH" secondAttribute="trailing" constant="30" id="AOI-lH-S96"/>
+                            <constraint firstItem="8o4-Cv-28m" firstAttribute="trailing" secondItem="hb1-Tp-28u" secondAttribute="trailing" constant="30" id="N74-U0-PeH"/>
+                            <constraint firstItem="hb1-Tp-28u" firstAttribute="centerX" secondItem="gso-8p-ELd" secondAttribute="centerX" id="NR1-Tc-D7K"/>
+                            <constraint firstItem="6bf-xY-JfH" firstAttribute="leading" secondItem="8o4-Cv-28m" secondAttribute="leading" constant="30" id="aDk-dg-Hud"/>
+                            <constraint firstItem="hb1-Tp-28u" firstAttribute="leading" secondItem="8o4-Cv-28m" secondAttribute="leading" constant="30" id="t6L-Sa-lK9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8o4-Cv-28m"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="knock knock joke" id="Y2w-Ze-XGU">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="output" destination="hb1-Tp-28u" id="Rrf-Ru-eVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEq-2j-Al3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="604"/>
+        </scene>
+        <!--dad jokes-->
         <scene sceneID="9nv-3a-6Vn">
             <objects>
                 <viewController storyboardIdentifier="dadJokesVC" id="ogH-vA-HpS" customClass="DadJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,7 +174,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SNF-sn-lx8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="dad" id="a1w-R6-toW">
+                    <tabBarItem key="tabBarItem" title="dad jokes" id="a1w-R6-toW">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
                     </tabBarItem>
                     <connections>
@@ -137,7 +185,7 @@
             </objects>
             <point key="canvasLocation" x="971.01449275362324" y="-1416.0326086956522"/>
         </scene>
-        <!--science-->
+        <!--science jokes-->
         <scene sceneID="1Qv-UO-mjU">
             <objects>
                 <viewController storyboardIdentifier="goodJokesVC" id="NPC-2S-HUo" customClass="GoodJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,7 +235,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IE8-0T-Mkw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="science" id="iPe-qc-7cT">
+                    <tabBarItem key="tabBarItem" title="science jokes" id="iPe-qc-7cT">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
                     </tabBarItem>
                     <connections>
@@ -211,6 +259,7 @@
                         <segue destination="NPC-2S-HUo" kind="relationship" relationship="viewControllers" id="zac-aK-0nH"/>
                         <segue destination="Na1-Zq-sdw" kind="relationship" relationship="viewControllers" id="xWI-dZ-Pr5"/>
                         <segue destination="ogH-vA-HpS" kind="relationship" relationship="viewControllers" id="IDO-HC-ucf"/>
+                        <segue destination="7Aj-9h-N0U" kind="relationship" relationship="viewControllers" id="mcO-52-ML6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cI-i0-9WB" userLabel="First Responder" sceneMemberID="firstResponder"/>

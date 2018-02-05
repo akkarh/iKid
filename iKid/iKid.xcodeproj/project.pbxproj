@@ -15,6 +15,7 @@
 		D60BED0E2028024A002C1685 /* GoodJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BED0D2028024A002C1685 /* GoodJokesViewController.swift */; };
 		D60BED1020280280002C1685 /* DadJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BED0F20280280002C1685 /* DadJokesViewController.swift */; };
 		D60BED122028029B002C1685 /* PunsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BED112028029B002C1685 /* PunsViewController.swift */; };
+		D60BED1420283A9C002C1685 /* KnockKnockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BED1320283A9C002C1685 /* KnockKnockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D60BED0D2028024A002C1685 /* GoodJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesViewController.swift; sourceTree = "<group>"; };
 		D60BED0F20280280002C1685 /* DadJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesViewController.swift; sourceTree = "<group>"; };
 		D60BED112028029B002C1685 /* PunsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunsViewController.swift; sourceTree = "<group>"; };
+		D60BED1320283A9C002C1685 /* KnockKnockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockKnockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D60BECFB2027823D002C1685 /* AppDelegate.swift */,
 				D60BECFD2027823D002C1685 /* ViewController.swift */,
 				D60BECFF2027823D002C1685 /* Main.storyboard */,
+				D60BED1320283A9C002C1685 /* KnockKnockViewController.swift */,
 				D60BED112028029B002C1685 /* PunsViewController.swift */,
 				D60BED0F20280280002C1685 /* DadJokesViewController.swift */,
 				D60BED0D2028024A002C1685 /* GoodJokesViewController.swift */,
@@ -149,6 +152,7 @@
 				D60BECFE2027823D002C1685 /* ViewController.swift in Sources */,
 				D60BECFC2027823D002C1685 /* AppDelegate.swift in Sources */,
 				D60BED1020280280002C1685 /* DadJokesViewController.swift in Sources */,
+				D60BED1420283A9C002C1685 /* KnockKnockViewController.swift in Sources */,
 				D60BED122028029B002C1685 /* PunsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,6 +26,7 @@ class DadJokesViewController: UIViewController {
     @IBAction func newJoke(_ sender: UIButton) {
         flipped = false
         randomNumber = Int(arc4random() % UInt32(list.count));
+        UIView.transition(with: self.view, duration: 0.325, options: UIViewAnimationOptions.transitionFlipFromRight, animations: {}, completion: { (finished: Bool) -> () in })
         displayJoke()
     }
     
